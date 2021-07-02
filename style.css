@@ -178,7 +178,7 @@ ul{
 	}
 }
 
-@media screen and (max-width: 483px){
+@media screen and (max-width: 393px){
 	.to_do_app .input_group form input[type="submit"]{
 		width: 100%;
 		margin-top: 10px;
