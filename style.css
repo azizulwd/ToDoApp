@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	background: #181818;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+ul{
+	list-style: none;
+}
+::selection{
+	background: #ff0000;
+	color: #fff;
+}
+::-webkit-input-placeholder{
+	color: #164490;
+}
+:-ms-input-placeholder{
+	color: #164490;
+}
+::-moz-placeholder{
+	color: #164490;
+}
+.to_do_app {
+	width: 1100px;
+	margin: 0 auto;
+	background: #181818;
+	padding: 40px 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px black;
+}
+.to_do_app .to_do_app_title {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.to_do_app .to_do_app_title span {
+	font-size: 30px;
+	display: inline-block;
+	margin-bottom: 20px;
+	background: #212121;
+	border: 1px solid lightgray;
+	padding: 20px;
+	border-radius: 50%;
+	width: 80px;
+	color: lightgray;
+	box-shadow: 0 0 5px black;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.to_do_app .to_do_app_title span:hover{
+	transform: scale(1.1);
+}
+.to_do_app .to_do_app_title h2 {
+	width: max-content;
+	border: 1px solid lightgray;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: #212121;
+	color: lightgray;
+	box-shadow: 0 0 5px black;
+}
+.to_do_app .input_group {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.to_do_app .input_group form{}
+.to_do_app .input_group form input[type="text"] {
+	width: 300px;
+	padding: 10px;
+	border: none;
+	outline: none;
+	background: #181818;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: lightgray;
+	font-size: 15px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.to_do_app .input_group form input[type="text"]:focus{
+	border: 1px solid #164490;
+}
+.to_do_app .input_group form input[type="submit"] {
+	width: 100px;
+	padding: 10px;
+	border: none;
+	font-size: 15px;
+	border-radius: 5px;
+	background: #164490;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 0 5px #164490;
+}
+.to_do_app .input_group form input[type="submit"]:hover{
+	box-shadow: none;
+}
+.to_do_app_container {
+	display: flex;
+	gap: 20px;
+}
+.to_do_app_container > div{
+	width: 33.33%;
+}
+.to_do_app_container .incomplete_task, .running_task, .completed_task {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 15px;
+	border-radius: 10px;
+}
+.to_do_app_container .incomplete_task h2, .running_task h2, .completed_task h2 {
+	color: lightgray;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.to_do_app_container .incomplete_task ul{}
+.to_do_app_container .incomplete_task ul li, .running_task ul li, .completed_task ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.to_do_app_container .incomplete_task ul li span,
+.running_task ul li span,
+.completed_task ul li span {
+	color: lightgray;
+	font-weight: 600;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.to_do_app_container .incomplete_task ul li span:hover,
+.running_task ul li span:hover,
+.completed_task ul li span:hover{
+	margin-left: 10px;
+}
+.to_do_app_container .incomplete_task ul li a,
+.running_task ul li a,
+.completed_task ul li a {
+	display: inline-block;
+	background: #ff0000;
+	color: #fff;
+	text-decoration: none;
+	padding: 6px 12px;
+	border-radius: 3px;
+	transition: 0.2s;
+}
+.to_do_app_container .incomplete_task ul li a:hover,
+.running_task ul li a:hover,
+.completed_task ul li a:hover{
+	background: #c70000;
+	box-shadow: 0 0 5px #ff2e2e;
+}
+
+@media screen and (max-width: 600px){
+	body{
+		display: block;
+		justify-content: center;
+		align-items: center;
+	}
+	.to_do_app{
+		width: 500px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.to_do_app_container{
+		flex-direction: column;
+	}
+
+	.to_do_app_container > div{
+		width: 100%;
+	}
+}
