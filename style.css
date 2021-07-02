@@ -73,7 +73,6 @@ ul{
 	text-align: center;
 	margin-bottom: 30px;
 }
-.to_do_app .input_group form{}
 .to_do_app .input_group form input[type="text"] {
 	width: 300px;
 	padding: 10px;
@@ -121,7 +120,6 @@ ul{
 	text-align: center;
 	margin-bottom: 15px;
 }
-.to_do_app_container .incomplete_task ul{}
 .to_do_app_container .incomplete_task ul li, .running_task ul li, .completed_task ul li {
 	display: flex;
 	justify-content: space-between;
