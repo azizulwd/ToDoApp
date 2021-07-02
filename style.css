@@ -165,7 +165,7 @@ ul{
 		align-items: center;
 	}
 	.to_do_app{
-		width: 500px;
+		width: 90%;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
@@ -175,5 +175,12 @@ ul{
 
 	.to_do_app_container > div{
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 483px){
+	.to_do_app .input_group form input[type="submit"]{
+		width: 100%;
+		margin-top: 10px;
 	}
 }
