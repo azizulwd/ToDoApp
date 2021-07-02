@@ -176,11 +176,11 @@ ul{
 	.to_do_app_container > div{
 		width: 100%;
 	}
-}
-
-@media screen and (max-width: 393px){
+	.to_do_app .input_group form input[type="text"]{
+		width: 100%;
+		margin-bottom: 15px;
+	}
 	.to_do_app .input_group form input[type="submit"]{
 		width: 100%;
-		margin-top: 10px;
 	}
 }
