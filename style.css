@@ -1,3 +1,11 @@
+/* ==================
+	Google Fonts
+================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* ==================
+	Common Css
+================== */
 *{
 	margin: 0;
 	padding: 0;
@@ -14,6 +22,9 @@ body {
 ul{
 	list-style: none;
 }
+body{
+	font-family: 'Poppins', sans-serif;
+}
 ::selection{
 	background: #ff0000;
 	color: #fff;
@@ -27,6 +38,12 @@ ul{
 ::-moz-placeholder{
 	color: #164490;
 }
+
+
+
+/* ==================
+	Main Css
+================== */
 .to_do_app {
 	width: 1100px;
 	margin: 0 auto;
@@ -88,7 +105,7 @@ ul{
 .to_do_app .input_group form input[type="text"]:focus{
 	border: 1px solid #164490;
 }
-.to_do_app .input_group form input[type="submit"] {
+.to_do_app .input_group form button {
 	width: 100px;
 	padding: 10px;
 	border: none;
@@ -140,20 +157,19 @@ ul{
 .completed_task ul li span:hover{
 	margin-left: 10px;
 }
-.to_do_app_container .incomplete_task ul li a,
-.running_task ul li a,
-.completed_task ul li a {
-	display: inline-block;
-	background: #ff0000;
-	color: #fff;
-	text-decoration: none;
-	padding: 6px 12px;
-	border-radius: 3px;
-	transition: 0.2s;
+.to_do_app_container .incomplete_task ul li button, .running_task ul li button, .completed_task ul li button {
+    background: #ff0000;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 0.2s;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
 }
-.to_do_app_container .incomplete_task ul li a:hover,
-.running_task ul li a:hover,
-.completed_task ul li a:hover{
+.to_do_app_container .incomplete_task ul li button:hover,
+.running_task ul li button:hover,
+.completed_task ul li button:hover{
 	background: #c70000;
 	box-shadow: 0 0 5px #ff2e2e;
 }
