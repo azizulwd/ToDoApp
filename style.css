@@ -92,7 +92,7 @@ body{
 	text-align: center;
 	margin-bottom: 30px;
 }
-.to_do_app .input_group form input[type="text"] {
+.to_do_app .input_group div input[type="text"] {
 	width: 300px;
 	padding: 10px;
 	border: none;
@@ -104,10 +104,10 @@ body{
 	border-radius: 5px;
 	margin-right: 5px;
 }
-.to_do_app .input_group form input[type="text"]:focus{
+.to_do_app .input_group div input[type="text"]:focus{
 	border: 1px solid #164490;
 }
-.to_do_app .input_group form button {
+.to_do_app .input_group div button {
 	width: 100px;
 	padding: 10px;
 	border: none;
@@ -119,7 +119,7 @@ body{
 	cursor: pointer;
 	box-shadow: 0 0 5px #164490;
 }
-.to_do_app .input_group form input[type="submit"]:hover{
+.to_do_app .input_group div input[type="submit"]:hover{
 	box-shadow: none;
 }
 .to_do_app_container {
