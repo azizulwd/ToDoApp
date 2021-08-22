@@ -24,14 +24,14 @@
 	</div>
 	<div class="input_group">
 		<form name="addTask">
-			<input type="text" placeholder="Add new task" name="task">
+			<input type="text" placeholder="Add new task" id="add_task_input">
 			<button id="add_task">Add Task</button>
 		</form>
 	</div>
 	<div class="to_do_app_container">
-		<div class="incomplete_task" id="incomplete_task">
+		<div class="incomplete_task">
 			<h2>Incompleted Task</h2>
-			<ul>
+			<ul id="incomplete_task">
 				<li>
 					<span>Task Name</span>
 					<button class="Running">Running</button>
@@ -46,9 +46,9 @@
 				</li>
 			</ul>
 		</div>
-		<div class="running_task" id="running_task">
+		<div class="running_task">
 			<h2>Running Task</h2>
-			<ul>
+			<ul id="running_task">
 				<li>
 					<span>Task Name</span>
 					<button class="complete">Complete</button>
@@ -63,9 +63,9 @@
 				</li>
 			</ul>
 		</div>
-		<div class="completed_task" id="complete_task">
+		<div class="completed_task">
 			<h2>Completed Task</h2>
-			<ul>
+			<ul id="complete_task">
 				<li>
 					<span>Task Name</span>
 					<button class="delete">Delete</button>
@@ -83,6 +83,7 @@
 	</div>
 </div>
 
-
+<!-- ================================== Custom JS ================================== -->
+<script src="index.js"></script>
 </body>
 </html>
