@@ -47,6 +47,8 @@ body{
 .to_do_app {
 	width: 1100px;
 	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	background: #181818;
 	padding: 40px 30px;
 	border-radius: 20px;
