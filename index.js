@@ -11,7 +11,7 @@ addTaskBtn.addEventListener("click", function(){
     let createButton = document.createElement("button");
     createSpan.innerText = addTaskInput.value;
     createButton.classList.add("running");
-    createButton.innerText = "Running";
+    createButton.innerText = "Complete";
 
     // append child
     incompleteTask.appendChild(createLi);

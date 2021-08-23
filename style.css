@@ -126,20 +126,20 @@ body{
 	display: flex;
 	gap: 20px;
 }
-.to_do_app_container > div{
-	width: 33.33%;
+.to_do_app_container > div {
+    width: 50%;
 }
-.to_do_app_container .incomplete_task, .running_task, .completed_task {
+.to_do_app_container .incomplete_task, .completed_task {
 	background: rgba(255, 255, 255, 0.1);
 	padding: 15px;
 	border-radius: 10px;
 }
-.to_do_app_container .incomplete_task h2, .running_task h2, .completed_task h2 {
+.to_do_app_container .incomplete_task h2, .completed_task h2 {
 	color: lightgray;
 	text-align: center;
 	margin-bottom: 15px;
 }
-.to_do_app_container .incomplete_task ul li, .running_task ul li, .completed_task ul li {
+.to_do_app_container .incomplete_task ul li, .completed_task ul li {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -147,7 +147,6 @@ body{
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .to_do_app_container .incomplete_task ul li span,
-.running_task ul li span,
 .completed_task ul li span {
 	color: lightgray;
 	font-weight: 600;
@@ -155,11 +154,10 @@ body{
 	cursor: pointer;
 }
 .to_do_app_container .incomplete_task ul li span:hover,
-.running_task ul li span:hover,
 .completed_task ul li span:hover{
 	margin-left: 10px;
 }
-.to_do_app_container .incomplete_task ul li button, .running_task ul li button, .completed_task ul li button {
+.to_do_app_container .incomplete_task ul li button, .completed_task ul li button {
     background: #ff0000;
     color: #fff;
     padding: 8px 12px;
@@ -170,7 +168,6 @@ body{
     cursor: pointer;
 }
 .to_do_app_container .incomplete_task ul li button:hover,
-.running_task ul li button:hover,
 .completed_task ul li button:hover{
 	background: #c70000;
 	box-shadow: 0 0 5px #ff2e2e;
