@@ -191,21 +191,21 @@ body{
 	.to_do_app_container > div{
 		width: 100%;
 	}
-	.to_do_app .input_group form input[type="text"]{
+	.to_do_app .input_group div input[type="text"]{
 		width: 100%;
 		margin-bottom: 15px;
 	}
-	.to_do_app .input_group form input[type="submit"]{
+	.to_do_app .input_group div button{
 		width: 100%;
 	}
 }
 
 @media screen and (max-width: 390px){
-	.to_do_app .input_group form input[type="text"]{
+	.to_do_app .input_group div input[type="text"]{
 		width: 100%;
 		margin-bottom: 15px;
 	}
-	.to_do_app .input_group form input[type="submit"]{
+	.to_do_app .input_group div button{
 		width: 100%;
 	}
 }
